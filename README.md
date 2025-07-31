@@ -1,6 +1,6 @@
-# Education
+# Aikido for Education
 
-This repository provides ready-to-use, classroom-tested materials to help professors and other instructors to integrate hands-on learning into their curricula. Whether you're teaching systems programming, cybersecurity, cloud computing, or secure software development, you'll find modular, adaptable content to enhance your coursework.
+This repository provides ready-to-use, classroom-tested materials to help professors and other instructors integrate hands-on learning into their curricula. Whether you're teaching systems programming, cybersecurity, cloud computing, or secure software development, you'll find modular, adaptable content to enhance your compsci and infosec coursework.
 
 ## 🧪 What's Inside
 
