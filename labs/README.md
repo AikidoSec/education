@@ -1,4 +1,4 @@
-# Education Labs
+# Aikdo for Education Labs
 
 coming soon...
 

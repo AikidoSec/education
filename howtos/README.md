@@ -1,4 +1,4 @@
-# Education HowTos
+# Aikido for Education HowTos
 
 coming soon...
 
