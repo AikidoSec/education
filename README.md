@@ -14,6 +14,12 @@ This repository provides ready-to-use, classroom-tested materials to help profes
   - Using security tools (Wireshark, Metasploit, Burp Suite, etc.)
   - Integrating labs into LMS platforms (Brightspace, Canvas, Moodle)
 
+## Aikido for Students
+
+Whether you’re launching a startup, shipping a side project, or landing your first tech job, Aikido gives you full enterprise-grade security completely free.
+
+Read more [here](https://www.aikido.dev/aikido-for-students)!
+
 ## 🤝 Contributing
 
 Contributions are welcome! If you have lab ideas, improvements, or want to share course-tested materials, feel free to contact [mwilkes\@aikido.dev](mailto:mwilkes\@example.com?subject=education-repo)
