@@ -44,7 +44,8 @@ By the end of this lab, you will:
    curl -fsSL https://raw.githubusercontent.com/opengrep/opengrep/main/install.sh | bash
    ```
    Opengrep is a fork of Semgrep and was initiated by a collective of organizations including: [Aikido Security](https://www.aikido.dev/), [Arnica](https://www.arnica.io/), [Amplify](https://amplify.security/), [Endor Labs](https://www.endorlabs.com/), [Jit](https://www.jit.io/), [Kodem](https://www.kodemsecurity.com/), [Legit](https://www.legitsecurity.com/), [Mobb](https://www.mobb.ai/), [Orca Security](https://orca.security/) and [Phoenix Security](https://phoenix.security/) (and others).
-   _Binaries available in the [release page](https://github.com/opengrep/opengrep/releases)_
+
+   _Binaries available in the [release page](https://github.com/opengrep/opengrep/releases)._
 
 ---
 
