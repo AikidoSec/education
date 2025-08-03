@@ -1,5 +1,5 @@
 
-# 🧪 Lab: Introduction to Static Application Security Testing (SAST)
+# 🧪 Lab 100: Introduction to Static Application Security Testing (SAST)
 
 ## Overview
 
