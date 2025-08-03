@@ -133,7 +133,7 @@ Write a short reflection (~150 words) answering:
 
 ## Additional Resources
 
-- [Opengrep Docs](https://opengrep.dev/docs/)
+- [Opengrep Homepage](https://opengrep.dev/)
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 - [OWASP Mobile Top 10](https://owasp.org/www-project-mobile-top-10/)
 - [DevSecOps](https://www.redhat.com/en/topics/devops/what-is-devsecops)
