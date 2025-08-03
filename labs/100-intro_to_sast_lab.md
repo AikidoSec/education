@@ -25,7 +25,6 @@ By the end of this lab, you will:
 - [cosign](https://github.com/sigstore/cosign) (for validating software packages and libraries)
 - Terminal/Command Prompt
 - [cURL](https://en.wikipedia.org/wiki/CURL)
-- Python (for installing Opengrep)
 - [Opengrep](https://www.opengrep.dev/) (SAST tool)
 - Code editor (e.g., VS Code, Sublime, nano, vi/vim, Emacs etc.)
 
