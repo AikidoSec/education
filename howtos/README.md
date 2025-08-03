@@ -4,7 +4,7 @@ coming soon...
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have lab ideas, improvements, or want to share course-tested materials, feel free to contact [mwilkes\@aikido.dev](mailto:mwilkes\@example.com?subject=education-repo)
+Contributions are welcome! If you have howto ideas, improvements, or want to share course-tested materials, feel free to contact [mwilkes\@aikido.dev](mailto:mwilkes\@example.com?subject=education-repo)
 
 ## License
 
