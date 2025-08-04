@@ -39,7 +39,18 @@ By the end of this lab, you will:
    ```
    From this directory you will scan the cloned copy of a vulnerable node express application that is one of over [100 forks](https://github.com/vulnerable-apps) of deliberately vulnerable web applications and APIs.
 
-2. **Install Opengrep**
+2. **Install cosign**
+   ```bash
+   brew install cosign
+   ```
+
+   or using golang:
+
+   ```bash
+   go install github.com/sigstore/cosign/v2/cmd/cosign@latest
+   ```
+
+3. **Install Opengrep**
    ```bash
    curl -fsSL https://raw.githubusercontent.com/opengrep/opengrep/main/install.sh | bash
    ```
@@ -51,7 +62,8 @@ By the end of this lab, you will:
 
 ## Lab Instructions
 
-### Step 1: What is SAST?
+### Step 1
+: What is SAST?
 
 Read the following:
 > SAST stands for Static Application Security Testing. It involves analyzing source code or compiled code to find security vulnerabilities without executing the program. SAST helps developers catch issues early in the SDLC and is a key component of DevSecOps.
