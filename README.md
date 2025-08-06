@@ -1,7 +1,7 @@
 # Aikido for Education
-<center>
-<img width="312" height="312" alt="image" src="https://github.com/user-attachments/assets/a0a2bbb5-0ec2-4562-a2d9-79643812f813" />
-</center>
+
+<img align="center" width="312" height="312" alt="image" src="https://github.com/user-attachments/assets/a0a2bbb5-0ec2-4562-a2d9-79643812f813" />
+
 <p></p>
 This repository provides ready-to-use, classroom-tested materials to help professors and other instructors integrate hands-on learning into their curricula. Whether you're teaching systems programming, cybersecurity, cloud computing, or secure software development, you'll find modular, adaptable content to enhance your compsci and infosec coursework.
 
