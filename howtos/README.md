@@ -1,6 +1,9 @@
 # Aikido for Education HowTos
 
-coming soon...
+- HowTo 100: Check the Reputation of an IP Address ...coming soon
+- HowTo 101: Enumerate the SSL/TLS Protocols and Ciphers of a Website ...coming soon
+- HowTo 102: TBD
+- HowTo 103: TBD
 
 ## 🤝 Contributing
 
