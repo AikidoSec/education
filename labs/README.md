@@ -1,7 +1,16 @@
 # Aikdo for Education Labs
 
 - [Lab 100: Introduction to Static Application Security Testing (SAST)](https://github.com/AikidoSec/education/blob/main/labs/100-intro_to_sast_lab.md)
-- Lab 101: ...coming soon
+- Lab 101: Package Dependencies and Software Composition Analysis (SCA) ...coming soon
+- Lab 102: Leaked Secrets, Keys and Tokens ...coming soon
+- Lab 103: Infrastructure as Code (IaC) ...coming soon
+- Lab 104: Container Image Vulnerabilities ...coming soon
+- Lab 105: Dynamic Application Security Testing (DAST) ...coming soon
+- Lab 106: Secure Development Workflows ...coming soon
+- Lab 107: Runtime Application Self-Protection (RASP) ...coming soon
+- Lab 108: Cross Site Scripting (XSS) ...coming soon
+- Lab 109: TBD
+- Lab 110: TBD
 
 ## 🤝 Contributing
 
