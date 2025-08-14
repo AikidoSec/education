@@ -26,7 +26,7 @@ Read more [here](https://www.aikido.dev/aikido-for-students)!
 
 Whether you're teaching computer science, software engineering, or cybersecurity, Aikido equips your students with enterprise-grade security tools... and at no cost!
 
-Read more [here](https://www.aikido.dev/aikido-for-higher-education)
+Read more [here](https://www.aikido.dev/aikido-for-higher-education)!
 
 ## 🤝 Contributing
 
