@@ -22,6 +22,12 @@ Whether you’re launching a startup, shipping a side project, or landing your f
 
 Read more [here](https://www.aikido.dev/aikido-for-students)!
 
+## Aikido for Educators
+
+Whether you're teaching computer science, software engineering, or cybersecurity, Aikido equips your students with enterprise-grade security tools... and at no cost!
+
+Read more [here](https://www.aikido.dev/aikido-for-higher-education)
+
 ## 🤝 Contributing
 
 Contributions are welcome! If you have lab ideas, improvements, or want to share course-tested materials, feel free to contact [mwilkes\@aikido.dev](mailto:mwilkes\@example.com?subject=education-repo)
