@@ -95,6 +95,8 @@ Read the following:
 ### Step 2: Turn on MFA
 
 - Install Google Authenticator on your mobile phone (if you have not installed it already)
+  - [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en&pli=1)
+  - [iOS](https://apps.apple.com/us/app/google-authenticator/id388497605)
 - Browse to your GitHub profile: [https://github.com/settings/profile](https://github.com/settings/profile)
 - Select "Password and authentication" from the left navigation menu
 - Click on "Enable two-factor authentication"
