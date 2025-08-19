@@ -1,9 +1,10 @@
 # Aikido for Education HowTos
 
-- HowTo 100: Check the Reputation of an IP Address ...coming soon
-- HowTo 101: Enumerate the SSL/TLS Protocols and Ciphers of a Website ...coming soon
-- HowTo 102: TBD
+- [HowTo 100: Introduction to Secure Software Development Life Cycle (SDLC)](https://github.com/AikidoSec/education/blob/main/howtos/100_secure_sdlc_howto.md)
+- HowTo 101: Check the Reputation of an IP Address ...coming soon
+- HowTo 102: Enumerate the SSL/TLS Protocols and Ciphers of a Website ...coming soon
 - HowTo 103: TBD
+- HowTo 104: TBD
 
 ## 🤝 Contributing
 
