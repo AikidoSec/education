@@ -36,27 +36,27 @@ By the end of this howto, you will:
 
 Before diving into the Secure SDLC, it’s important to become familiar with some of the common terms and acronyms used in the field of information security (infosec). Here are a few to get started:
 
-- CIA Triad: Confidentiality, Integrity, Availability are the three pillars of security.
-- Vulnerability: A weakness in a system that could be exploited.
-- Exploit: The method an attacker uses to take advantage of a vulnerability.
-- CVE: Common Vulnerabilities and Exposures is a catalogo of publicly known information security vulnerabilities (e.g., [CVE-2021-44228](https://nvd.nist.gov/vuln/detail/cve-2021-44228))
-- CVSS: Common Vulnerability Scoring System used to quantify the severity of a hardware or software vulnerability
-- MFA: Multi-Factor Authentication is used to protect login credentials with an additional authentication factor (something that you are such as face recognition or fingerprint scan, something you know such as a password or something that you have such as an RSA key fob or authenticator application such as Google Authenticator
-- Threat Actor: An individual or group that may attempt an attack (e.g., hackers, criminal groups, nation states).
-- APT: Advanced Persistent Threat is an acronym for attackers, often backed by nation-states or well-resourced criminal organizations.
-- OWASP: The Open Worldwide Application Security Project is a community that creates free resources on application security best known for publishing top 10 lists of common application security risks or mistakes.
+- **CIA Triad**: Confidentiality, Integrity, Availability are the three pillars of security.
+- **Vulnerability**: A weakness in a system that could be exploited.
+- **Exploit**: The method an attacker uses to take advantage of a vulnerability.
+- **CVE**: Common Vulnerabilities and Exposures is a catalogo of publicly known information security vulnerabilities (e.g., [CVE-2021-44228](https://nvd.nist.gov/vuln/detail/cve-2021-44228))
+- **CVSS**: Common Vulnerability Scoring System used to quantify the severity of a hardware or software vulnerability
+- **MFA**: Multi-Factor Authentication is used to protect login credentials with an additional authentication factor (something that you are such as face recognition or fingerprint scan, something you know such as a password or something that you have such as an RSA key fob or authenticator application such as Google Authenticator
+- **Threat Actor**: An individual or group that may attempt an attack (e.g., hackers, criminal groups, nation states).
+- **APT**: Advanced Persistent Threat is an acronym for attackers, often backed by nation-states or well-resourced criminal organizations.
+- **OWASP**: The Open Worldwide Application Security Project is a community that creates free resources on application security best known for publishing top 10 lists of common application security risks or mistakes.
 
 2. **Understand the Secure SDLC**
 
 The SDLC is often represented in stages. Here’s how security fits into each one:
 
-- Planning - Define requirements, including security policies.
-- Design - Identify potential threats (using methods like threat modeling).
-- Implementation (Coding) - Use secure coding practices to avoid introducing vulnerabilities.
-- Testing - Perform security testing such as static analysis and vulnerability scanning.
-- Deployment - Configure environments securely, monitor for incidents.
-- Maintenance - Apply patches and updates that address bugs and security issues.
-- Decommissioning - Retire systems and any third-party integrations responsibly.
+- **Planning** - Define requirements, including security policies.
+- **Design** - Identify potential threats (using methods like threat modeling).
+- **Implementation (Coding)** - Use secure coding practices to avoid introducing vulnerabilities.
+- **Testing** - Perform security testing such as static analysis and vulnerability scanning.
+- **Deployment** - Configure environments securely, monitor for incidents.
+- **Maintenance** - Apply patches and updates that address bugs and security issues.
+- **Decommissioning** - Retire systems and any third-party integrations responsibly.
 
 A clever way of describing the thinking behind having security applied to all phases of the SDLC is that we should not be in the business of building security features, but rather we should be in the business of designing features securely.
 
