@@ -83,16 +83,7 @@ Congratulations! You should see your repo has been created. You're well on your 
 
 ## Instructions
 
-### Step 1: What is the SDLC?
-
-Read the following:
-> SDLC stands for Software Development Life Cycle.
-
-**Question:** How is SDLC different from a Secure SDLC?
-
----
-
-### Step 2: Turn on MFA
+### Step 1: Turn on MFA
 
 - Install Google Authenticator on your mobile phone (if you have not installed it already)
   - [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en&pli=1)
@@ -105,7 +96,7 @@ Read the following:
 
 ---
 
-### Step 3: Sign in to Aikido Portal
+### Step 2: Sign in to Aikido Portal
 
 Many of the labs in this repository make use of the Aikido Security platform which you can access to learn about the Secure SDLC by looking at code and scanning it for vulnerabilities and security issues.
 
@@ -120,7 +111,7 @@ Many of the labs in this repository make use of the Aikido Security platform whi
 
 ---
 
-### Step 4: Explore the OWASP Top 10
+### Step 3: Explore the OWASP Top 10
 
 The [OWASP Top 10](https://owasp.org/www-project-top-ten/) is a list of the most common and critical security risks for web applications. Understanding these risks will help you see the kinds of problems a Secure SDLC tries to prevent.
 
@@ -132,7 +123,7 @@ Here are a few examples from the list:
 
 Activity: Read through the top 10 list. Pick one risk and write a short summary in your own words.
 
-### Step 5: Interpret Scan Results of the Demo Respository
+### Step 4: Interpret Scan Results of the Demo Respository
 
 Now let's apply these concepts by looking at automated security scan results. Developers use tools like SAST (Static Application Security Testing) to analyze code for vulnerabilities. Aikido's platform helps developers and security teams identify, prioritize, and remediate vulnerabilities across code, cloud infrastructure, and runtime environments.
 
