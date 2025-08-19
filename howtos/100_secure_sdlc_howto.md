@@ -27,9 +27,6 @@ By the end of this howto, you will:
 
 - [GitHub](https://github.com/)
 - [Google Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator)
-- Terminal/Command Prompt
-- [cURL](https://en.wikipedia.org/wiki/CURL)
-- Code editor (e.g., VS Code, Sublime, nano, vi/vim, Emacs etc.)
 
 ---
 
