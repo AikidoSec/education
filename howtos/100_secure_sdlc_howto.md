@@ -149,9 +149,23 @@ The Secure SDLC is not about turning everyone into a security engineer. It’s a
 
 ## Optional Extension
 
-- Try 
-- Configure
-- Explore
+- **Try Threat Modeling with OWASP Threat Dragon** 
+  - Install and open [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/)
+  - Draw a simple diagram of the demo repository system (e.g., web app, database, user)
+  - Identify at least two potential threats (such as SQL Injection or Broken Authentication)
+  - Write a short note on how these threats could be mitigated
+
+- **Configure a Secure GitHub Workflow**
+  - Explore GitHub Actions and set up a simple Continuous Integration (CI) workflow.
+  - Add a step to run a security scan tool (such as CodeQL or a free SAST scanner).
+  - Commit and push your workflow file to see automated scan results.
+  - Reflect on how automation helps enforce a Secure SDLC.
+
+- **Explore Real-World Breaches**
+  - Research a recent software vulnerability or breach (e.g., Log4j / CVE-2021-44228).
+  - Summarize what went wrong in 2–3 paragraphs.
+  - Map the failure back to the SDLC phases — could better planning, design, or testing have prevented it?
+  - Share your summary with your peers or in your reflection submission.
 
 ---
 
