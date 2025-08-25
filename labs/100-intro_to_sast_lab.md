@@ -62,8 +62,7 @@ By the end of this lab, you will:
 
 ## Lab Instructions
 
-### Step 1
-: What is SAST?
+### Step 1: What is SAST?
 
 Read the following:
 > SAST stands for Static Application Security Testing. It involves analyzing source code or compiled code to find security vulnerabilities without executing the program. SAST helps developers catch issues early in the SDLC and is a key component of DevSecOps.
