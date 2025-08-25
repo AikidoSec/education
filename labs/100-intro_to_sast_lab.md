@@ -81,6 +81,8 @@ opengrep scan --config=auto .
 
 This will analyze the code and print a list of findings with file names, line numbers, and rule descriptions.
 
+_Note_: The ruleset used in this Opengrep SAST lab is a default ruleset. Aikido Security has a different and more advanced ruleset that is applied to its scanning of code as you might notice in a subsequent lab using the Aikido Platform.
+
 ---
 
 ### Step 3: Analyze Results
@@ -128,6 +130,7 @@ Write a short reflection (~150 words) answering:
 - Try [Bandit](https://bandit.readthedocs.io/en/latest/) if you're using Python code.
 - Configure GitHub Actions to run Opengrep on each commit.
 - Explore writing your own Opengrep rule.
+- Explore [Opengrep Playground](https://github.com/opengrep/opengrep-playground)
 
 ---
 
