@@ -4,7 +4,8 @@
 - HowTo 101: Check the Reputation of an IP Address ...coming soon
 - HowTo 102: Enumerate the SSL/TLS Protocols and Ciphers of a Website ...coming soon
 - HowTo 103: Understand Compliance and Audit Reports ...coming soon
-- HowTo 104: TBD
+- HowTo 104: Deploy a vulnerable PHP app on Azure and protect it with Zen Firewall ...coming soon
+- HowTo 105: TBD
 
 ## 🤝 Contributing
 
