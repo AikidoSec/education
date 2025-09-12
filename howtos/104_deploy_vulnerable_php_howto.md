@@ -33,6 +33,7 @@ Before diving into the capabilities of the Aikido Zen Firewall to protect a lega
 
 2. **Create an Azure Subscription**
 
+You’ll need access to an Azure Cloud account. If you don’t already have one, Microsoft offers a free subscription that provides a limited set of services and credits to get started. Setting up the free subscription only takes a few minutes and ensures you’ll be able to complete the steps in this guide without incurring unexpected costs.
 
 ---
 
