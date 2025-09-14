@@ -75,7 +75,7 @@ gpg -K
 
 ### Step 2: Export your public key block
 
-- To export your Public key in a form that can be share and used, type the following command on the Terminal App:
+- To export your public key in a form that can be share and used, type the following command on the Terminal App:
 
 ```
 gpg --export --armor --output YourNameNoSpaces.pub
