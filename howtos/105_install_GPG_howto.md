@@ -1,6 +1,5 @@
 
 # HowTo 105: Install GPG and encrypt/decrypt files
-Deploy a vulnerable PHP app on Azure and protect it with Zen Firewall
 
 ## Overview
 
@@ -40,39 +39,101 @@ By the end of this howto, you will:
 
 Install GnuPG (GPG) on your computer to enable encryption, signing, and verification of files and messages. This step ensures you have the necessary tools to securely manage keys and protect sensitive data like passwords and application tokens used for authentication (but without the need for a password manager).
 
+**GPG Installation on Mac**
+
+- Ensure that you have [Homebrew](https://brew.sh/) installed on your Mac
+- To install GnuPG, type the following command in the Terminal App:
+```
+brew install gnupg2
+```
+
+**GPG Installation on Windows**
+
+Browse to the [binary releases of Gpg4win](https://gpg4win.org/download.html) and download the program to your Windows machine. As of this writing, Gpg4win latest version is 4.4.1.
+
 ---
 
 ## Instructions to use GPG basic features
 
 ### Step 1: Generate your private/public keys
 
+**GPG Cheat Sheet Command Reference**
+
+- To generate public and private keys, type the following command on the Terminal App:
+
+```
+gpg --full-generate-key
+```
+
+- To list the keys generated, type the following command on the Terminal App:
+
+```
+gpg -K
+```
+
 ---
 
 ### Step 2: Export your public key block
+
+- To export your Public key in a form that can be share and used, type the following command on the Terminal App:
+
+```
+gpg --export --armor --output YourNameNoSpaces.pub
+```
 
 ---
 
 ### Step 3: Import another person's public key
 
+- To import public keys for others simply copy the public key blob text block and place it into a file and then type the following command on the Terminal App to import the public key for that user:
+
+```
+gpg --import --armor OtherUserPublicKeyBlock.pub
+```
+
 ---
 
 ### Step 4: Encrypt a file
+
+- To encrypt and sign a file using GPG, type the following command on the Terminal App:
+
+```
+gpg -se -u <user> <filename>
+```
+
+- To encrypt and sign a file using GPG for more than one user, type the following command on the Terminal App:
+
+```
+gpg -se -u <user1> -u <user2> <filename>
+```
 
 ---
 
 ### Step 5: Decrypt a file
 
+- To decrypt a file, type the following command on the Terminal App:
+
+```
+gpg -d <filename> > <outputfile>
+```
+
 ---
 
 ### Step 6: List the public keys in your kekyring
+
+- To list the public keys in your keyring, type the following command on the Terminal App:
+
+```
+gpg --list-keys
+```
 
 ---
 
 ## Additional Resources
 
-- one
-- two
-- three
+- [GPG Cheat Sheet](https://irtfweb.ifa.hawaii.edu/~lockhart/gpg/)
+- [Another GPG Cheat Sheet](https://www.sysadmin.md/gpg-cheatsheet.html)
+- [GPG Wikipedia Page](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)
 
 ---
 
