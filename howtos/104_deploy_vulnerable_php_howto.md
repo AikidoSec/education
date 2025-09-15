@@ -95,7 +95,7 @@ az vm open-port --port 22,80,443 --resource-group mytest104 --name ubuntu104
 
 The ouput from this command, if successful, will include the public IP address that was assigned to your VM. Make a note of this address as you need it later in subsequent steps of this howto.
 
-This creates a VM named **ubuntu104** using the Ubuntu LTS 22.04 release with a username for ssh remote access of **azureuser** and to create the necessary ssh private/public keys for accessing the server once it is provisioned. The commands above also instruct Azure to add firewall rules to allow the server to be reachable on TCP ports 22 (for ssh and scp), 80 (for http) and 443 (for https). You will see why we include port 80 in a later step involving certbot.
+This creates a VM named **ubuntu104** using the Ubuntu LTS 24.04 release with a username for ssh remote access of **azureuser** and to create the necessary ssh private/public keys for accessing the server once it is provisioned. The commands above also instruct Azure to add firewall rules to allow the server to be reachable on TCP ports 22 (for ssh and scp), 80 (for http) and 443 (for https). You will see why we include port 80 in a later step involving certbot.
 
 Now, verify that you can ssh to the server by using the ssh .pem file that was created. The command will look something like this (where the public IP address will be different of course as this is dynamically assigned at the time of creation from a pool of available IP addresses for that region of Azure cloud):
 
