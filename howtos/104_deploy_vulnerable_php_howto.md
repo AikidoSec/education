@@ -29,8 +29,10 @@ By the end of this howto, you will:
 - [Ubuntu Linux VM](https://ubuntu.com/server)
 - [certbot](https://certbot.eff.org/)
 - [ApacheBench](https://httpd.apache.org/docs/2.4/programs/ab.html)
+- [BlazeMeter Taurus](https://gettaurus.org/)
 - [cURL](https://en.wikipedia.org/wiki/CURL)
 - [Aikido Zen Firewall for PHP](https://github.com/AikidoSec/firewall-php)
+- [TOR Browser](https://www.torproject.org/download/)
 
 ---
 
