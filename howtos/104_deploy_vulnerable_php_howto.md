@@ -84,7 +84,7 @@ az vm create \
   --image Ubuntu2404 \
   --size Standard_D2s_v3 \
   --admin-username azureuser \
-  --ssh-key-value ~/.ssh/id_rsa.pub
+  --ssh-key-value ~/.ssh/id_rsa.pub \
   --public-ip-sku Standard 
 
 az vm open-port --port 22,80,443 --resource-group mytest104 --name ubuntu104
