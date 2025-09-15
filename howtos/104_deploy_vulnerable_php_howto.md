@@ -73,11 +73,12 @@ Next, create an Ubuntu Linux VM in that resource group in the US East Azure Clou
 az vm create \
   --resource-group mytest104 \
   --name ubuntu104 \
-  --image UbuntuLTS \
+  --image Ubuntu2404 \
   --admin-username azureuser \
   --generate-ssh-keys \
   --public-ip-sku Standard \
-  --open-ports 22,80,443
+  --open-ports 22,80,443 \
+
 ```
 
 This creates a VM named **ubuntu104** using the Ubuntu LTS 22.04 release with a username for ssh remote access of **azureuser** and to create the necessary ssh private/public keys for accessing the server once it is provisioned. The commands above also instruct Azure to add firewall rules to allow the server to be reachable on TCP ports 22 (for ssh and scp), 80 (for http) and 443 (for https). You will see why we include port 80 in a later step involving certbot.
