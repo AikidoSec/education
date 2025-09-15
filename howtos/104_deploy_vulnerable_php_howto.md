@@ -3,7 +3,7 @@
 
 ## Overview
 
-This howto
+This howto walks you through deploying a deliberately vulnerable PHP application on an Ubuntu VM running on Microsoft Azure and securing it with Aikido Security’s Zen Firewall. The goal is to demonstrate how an in-app firewall (or Application Detection and Response capability, previously referred to as RASP or Runtime Application Self-Protection) can detect and block real-world attack traffic in a cloud environment, giving you hands-on experience with both exploitation and defense.
 
 ---
 
@@ -11,17 +11,26 @@ This howto
 
 By the end of this howto, you will:
 
-- one
-- two
-- three
-- four
+- create a free Azure subscription
+- provision an Ubuntu Linux VM
+- install an Apache webserver with PHP 8
+- deploy a Let's Encrypt x509 certificate
+- protect the vulnerable PHP application
+- verify that rate limiting and TOR browser blocking are applied
 
 ---
 
 ## Tools & Requirements
 
+- a domain name that you own and admin (recommend purchasing one via [Cloudlflare](https://www.cloudflare.com/products/registrar/))
 - [GitHub](https://github.com/)
-- Azure Cloud
+- [Azure Cloud](https://azure.microsoft.com/en-us/pricing/free-services)
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+- [Ubuntu Linux VM](https://ubuntu.com/server)
+- [certbot](https://certbot.eff.org/)
+- [ApacheBench](https://httpd.apache.org/docs/2.4/programs/ab.html)
+- [cURL](https://en.wikipedia.org/wiki/CURL)
+- [Aikido Zen Firewall for PHP](https://github.com/AikidoSec/firewall-php)
 
 ---
 
@@ -29,11 +38,11 @@ By the end of this howto, you will:
 
 1. **Buy a domain**
 
-Before diving into the capabilities of the Aikido Zen Firewall to protect a legacy application or API, we first need to build some core elements like purchasing a domain name. This will be useful for other labs and howtos and we highly recommend that everyone learn cybersecurity by doing cybersecurity.
+Before diving into the capabilities of the Aikido Zen Firewall to protect a legacy application or API, we first need to build some core elements like purchasing a domain name. This will be useful for other labs and howtos and we highly recommend that everyone learn cybersecurity by doing cybersecurity. You can purchase a domain for around US$15 per year from [Cloudflare](https://www.cloudflare.com/products/registrar/) who are a reputable registrar and who offer lots of great free features for protecting your website.
 
 2. **Create an Azure Subscription**
 
-You’ll need access to an Azure Cloud account. If you don’t already have one, Microsoft offers a free subscription that provides a limited set of services and credits to get started. Setting up the free subscription only takes a few minutes and ensures you’ll be able to complete the steps in this guide without incurring unexpected costs.
+You’ll need access to an Azure Cloud account. If you don’t already have one, Microsoft offers a [free subscription](https://azure.microsoft.com/en-us/pricing/free-services) to new users for 12 months that provides a limited set of services and credits to get started. Setting up the free subscription only takes a few minutes and ensures you’ll be able to complete the steps in this guide without incurring unexpected costs.
 
 ---
 
@@ -41,9 +50,15 @@ You’ll need access to an Azure Cloud account. If you don’t already have one,
 
 ### Step 1: Pick an FQDN for your vulnerable PHP application
 
+An [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name), or Fully Qualified Domain Name, is the complete, unique address of a device or server on the internet's Domain Name System (DNS), much like a full street address for a house. It consists of a hostname, one or more subdomains, a domain name, and a top-level domain (like .com or .edu or .net or .dev or .io), providing the exact path to identify a resource without ambiguity. An example of an FQDN is hailhydra.com or archive.org.
+
+One of the great benefits to owning your own domain is that you immediately gain an infinite supply of email addresses to use as you see fit. And if you configure Cloudflare to host your DNS services and records, you can have them all forwarded to a free Gmail account and never have to use your real email address again when downloading whitepapers or signing up for services and trial accounts. But that particular construction is it's own howto article unto itself and best left for another day. For the moment, just make sure that you are able to add a DNS record to your personal domain so that you can complete the rest of the tasks below.
+
 ---
 
 ### Step 2: Provision an Ubuntu Linux VM on Azure
+
+
 
 ---
 
