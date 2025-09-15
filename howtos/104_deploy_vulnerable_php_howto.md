@@ -105,9 +105,81 @@ ssh azureuser@<public-ip-address>
 
 ### Step 3: Install Apache and PHP on the VM
 
+Now that you are connected to your Ubuntu VM, you need to become root and install some software using the apt package manager:
+
+```
+sudo -s
+apt-get update
+apt-get install apache2
+apt install python3 python3-dev python3-venv libaugeas-dev gcc
+python3 -m venv /opt/certbot/
+/opt/certbot/bin/pip install --upgrade pip
+/opt/certbot/bin/pip install certbot certbot-apache
+ln -s /opt/certbot/bin/certbot /usr/bin/certbot
+```
+
+Now we need to make a DNS entry for this server using the public IP that was assigned and picking a hostname for your server. I would suggest using zen.mydomain.com (where mydomain.com is of course your FQDN that you own or created previously).
+
+Add an "A" record so that zen.mydomain.com points to the IP address of your Ubuntu VM.
+
+Verify that this works by browsing to the hostname. You should see a standard "It works!" Ubuntu Apache page returned by the server.
+
+We finish this step by running certbot, which will ask two questions. The first question is for you to provide an email address so that certbot can register your use of the tool. The second question is for you to provide the name of your server so that it can generate an x509 certificate and install it for Apache to use when being addressed over https. In the example for this howto, the name is zen.mydomain.com (but your hostname will be different of course and use your personal FQDN).
+
+```
+certbot --apache
+```
+
+If all went well here then you now have a fully-functional Apache webserver that supports https. The next step is to install PHP8.3 and enable the PHP module and restart the webserver:
+
+```
+apt install php8.3 -y
+apt install libapache2-mod-php8.3
+a2enmod php8.3
+systemctl restart apache2
+```
+
+Now let's add a php file to your server... a file that is often used for debugging and verification of the PHP installation. It' a simple file that should be created using vi/vim/nano or your favorite text file editor. The file should be created in the Apache document root:
+
+```
+cd /var/www/html
+echo "<?php phpinfo(); ?>" > dude.php
+```
+
+The above commands will create a file named "dude.php" (a bit of security through obscurity in use here... if we call the file phpinfo.php then a good number of bots and threat actors on the internet will be looking for this kind of filename on your server and potentially get up to no good once they find it). This is the "vulnerable" element of this howto where we want to use the Aikido Zen Firewall capabilities to protect this file in several ways.
+
 ---
 
 ### Step 4: Install Zen Firewall PHP package on the VM
+
+Intalling the Zen Firewall for PHP package uses the curl command which should be run as root on the VM:
+
+```
+curl -L -O https://github.com/AikidoSec/firewall-php/releases/download/v1.3.4/aikido-php-firewall.x86_64.deb && dpkg -i -E ./aikido-php-firewall.x86_64.deb 
+```
+
+If the command ran successfully, the output should look something like this:
+
+```
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 11.3M  100 11.3M    0     0  47.2M      0 --:--:-- --:--:-- --:--:-- 47.2M
+
+Selecting previously unselected package aikido-php-firewall.
+(Reading database ... 75194 files and directories currently installed.)
+Preparing to unpack .../aikido-php-firewall.x86_64.deb ...
+Unpacking aikido-php-firewall (1.3.4-1) ...
+Setting up aikido-php-firewall (1.3.4-1) ...
+Starting the installation process for Aikido PHP Firewall v1.3.4...
+Found PHP versions: 8.3
+Installing for PHP 8.3...
+Installing new Aikido extension in /usr/lib/php/20230831/aikido-1.3.4.so...
+Installing new Aikido mod in /etc/php/8.3/mods-available/aikido-1.3.4.ini...
+Installing new Aikido mod in /etc/php/8.3/cli/conf.d/zz-aikido-1.3.4.ini...
+Installing new Aikido mod in /etc/php/8.3/apache2/conf.d/zz-aikido-1.3.4.ini...
+Installation process for Aikido v1.3.4 completed.
+```
 
 ---
 
