@@ -75,7 +75,7 @@ az vm create \
   --name ubuntu104 \
   --image UbuntuLTS \
   --admin-username azureuser \
-  --generate-ssh-keys
+  --generate-ssh-keys \
   --public-ip-sku Standard \
   --open-ports 22,80,443
 ```
