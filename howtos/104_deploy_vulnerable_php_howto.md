@@ -65,7 +65,15 @@ az login
 az group create -l eastus -n mytest104
 ```
 
-This will trigger a login page to be displayed on your web browser and then create a resource group named **mytest100**
+This will trigger a login page to be displayed on your web browser and then create a resource group named **mytest104**
+
+If you already have an ssh private key in your ~/.ssh/ directory, you can proceed to the VM creation step below. If you have never created an ssh private/public keypair, you will need to do so using this command on a Mac (for Windows you will need to replace the ssh-key-value path below to the location of your public key in openssh format):
+
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+where you replace "your_email@example.com" with your actual email address. This creates a file in your ~/.ssh/ directory called id_rsa.pub (the public key) and id_rsa (the private key). Make sure to note the passphrase that you set on your private key because if you lose it or forget it you will need to delete the VM and start over since you cannot login to it anymore using ssh.
 
 Next, create an Ubuntu Linux VM in that resource group in the US East Azure Cloud datacenter:
 
@@ -74,10 +82,12 @@ az vm create \
   --resource-group mytest104 \
   --name ubuntu104 \
   --image Ubuntu2404 \
+  --size Standard_D2s_v3 \
   --admin-username azureuser \
-  --generate-ssh-keys \
-  --public-ip-sku Standard \
-  --open-ports 22,80,443 \
+  --ssh-key-value ~/.ssh/id_rsa.pub
+  --public-ip-sku Standard 
+
+az vm open-port --port 22,80,443 --resource-group mytest104 --name ubuntu104
 
 ```
 
