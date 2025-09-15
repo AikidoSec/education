@@ -73,7 +73,7 @@ Next, create an Ubuntu Linux VM in that resource group in the US East Azure Clou
 az vm create \
   --resource-group mytest104 \
   --name ubuntu104 \
-  --image Ubuntu2204 \
+  --image UbuntuLTS \
   --admin-username azureuser \
   --generate-ssh-keys
   --public-ip-sku Standard \
