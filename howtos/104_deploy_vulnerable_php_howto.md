@@ -58,7 +58,35 @@ One of the great benefits to owning your own domain is that you immediately gain
 
 ### Step 2: Provision an Ubuntu Linux VM on Azure
 
+Install the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) and run the following commands
 
+```
+az login
+az group create -l eastus -n mytest104
+```
+
+This will trigger a login page to be displayed on your web browser and then create a resource group named **mytest100**
+
+Next, create an Ubuntu Linux VM in that resource group in the US East Azure Cloud datacenter:
+
+```
+az vm create \
+  --resource-group mytest104 \
+  --name ubuntu104 \
+  --image Ubuntu2204 \
+  --admin-username azureuser \
+  --generate-ssh-keys
+  --public-ip-sku Standard \
+  --open-ports 22,80,443
+```
+
+This creates a VM named **ubuntu104** using the Ubuntu LTS 22.04 release with a username for ssh remote access of **azureuser** and to create the necessary ssh private/public keys for accessing the server once it is provisioned. The commands above also instruct Azure to add firewall rules to allow the server to be reachable on TCP ports 22 (for ssh and scp), 80 (for http) and 443 (for https). You will see why we include port 80 in a later step involving certbot.
+
+Now, verify that you can ssh to the server by using the ssh .pem file that was created. The command will look something like this (where the public IP address will be different of course as this is dynamically assigned at the time of creation from a pool of available IP addresses for that region of Azure cloud):
+
+```
+ssh azureuser@public-ip-address>
+```
 
 ---
 
